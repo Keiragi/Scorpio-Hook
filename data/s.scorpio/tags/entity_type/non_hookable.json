@@ -1,0 +1,11 @@
+{
+  "values": [
+    "item",
+    "player",
+    "interaction",
+    "item_display",
+    "text_display",
+    "block_display",
+    "marker"
+  ]
+}

@@ -4,6 +4,7 @@
   execute on origin run particle firework ~ ~0.35 ~ 0 0 0 0 1 force @s
 
 # leap処理
+  execute positioned ~-0.6 ~-0.6 ~-0.6 if entity @e[type=!#s.scorpio:non_hookable,dx=0.2,dy=0.2,dz=0.2] at @s run function s.scorpio:leap/op
 
 ## 削除処理
   # 空中にいなければカウント
@@ -15,3 +16,5 @@
     particle minecraft:item{item:nether_star} ~ ~0.35 ~ 0 0 0 0.1 10
     playsound minecraft:block.glass.break player @a[distance=..8] ~ ~ ~ 0.1 2
     kill @s
+
+  # y=ax+b をつくってxに最大値代入 yの最小大値がでる それが範囲内にあるか
