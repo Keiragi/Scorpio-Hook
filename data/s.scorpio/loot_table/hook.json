@@ -91,8 +91,15 @@
                 "amount": -1,
                 "operation": "add_multiplied_total",
                 "slot": "hand"
+              },
+              {
+                "type": "minecraft:block_break_speed",
+                "id": "s.scorpio:none_block_break",
+                "amount": -1,
+                "operation": "add_multiplied_total",
+                "slot": "hand"
               }
-            ]
+            ],
           }
         }
       ]
