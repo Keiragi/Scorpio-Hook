@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "get_dummy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:nether_star",
+            "components": {
+              "minecraft:custom_data": {
+                "S.Data": {
+                  "ItemID": "Hook.Dummy"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "s.scorpio:item/clear_dummy"
+  }
+}
