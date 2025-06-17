@@ -83,8 +83,8 @@
             },
             "minecraft:tooltip_display": {
               "hidden_components": [
-                "enchantments",
-                "attribute_modifiers"
+                "minecraft:enchantments",
+                "minecraft:attribute_modifiers"
               ]
             },
             "minecraft:attribute_modifiers": [
