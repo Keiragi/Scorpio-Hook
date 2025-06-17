@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:nether_star"
+          "name": "minecraft:potion"
         }
       ],
       "functions": [
@@ -72,6 +72,9 @@
         {
           "function": "minecraft:set_components",
           "components": {
+            "minecraft:item_model": "minecraft:nether_star",
+            "!minecraft:potion_contents": {},
+            "minecraft:enchantment_glint_override": true,
             "minecraft:max_stack_size": 1,
             "minecraft:custom_data": {
               "S.Data": {
@@ -100,6 +103,38 @@
                 "slot": "hand"
               }
             ],
+            "minecraft:consumable": {
+              "consume_seconds": 0,
+              "sound": "minecraft:intentionally_empty",
+              "has_consume_particles": false
+            },
+            "minecraft:use_remainder": {
+              "id": "minecraft:potion",
+              "count": 1,
+              "components": {
+                "minecraft:item_model": "minecraft:nether_star",
+                "!minecraft:potion_contents": {},
+                "minecraft:enchantment_glint_override": true,
+                "custom_data": "{\"S.Data\":{\"ItemID\":\"Hook\"},\"Used\":1b,\"Loottable\":\"s.scorpio:hook\"}",
+                "enchantments": {
+                  "s.scorpio:remainder": 1
+                },
+                "item_name": {
+                  "text": "Hook",
+                  "color": "yellow"
+                },
+                "lore": [
+                  {
+                    "text": "このアイテムが残っているなら、",
+                    "italic": false
+                  },
+                  {
+                    "text": "バグが起きたということ。",
+                    "italic": false
+                  }
+                ]
+              }
+            }
           }
         }
       ]
