@@ -84,9 +84,6 @@
                 "attribute_modifiers"
               ]
             },
-            "minecraft:enchantments": {
-              "s.scorpio:handheld": 1
-            },
             "minecraft:attribute_modifiers": [
               {
                 "type": "minecraft:attack_damage",
