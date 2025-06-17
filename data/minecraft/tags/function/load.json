@@ -1,5 +1,6 @@
 {
   "values": [
-    "s.scorpio:load"
+    "s.scorpio:load",
+    "p_motion:system/load"
   ]
 }
