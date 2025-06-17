@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "interact": {
+      "trigger": "player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "interaction",
+          "nbt": "{\"Tags\":[\"S.Scorpio\"]}"
+        }
+      }
+    },
+    "attack": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "interaction",
+          "nbt": "{\"Tags\":[\"S.Scorpio\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "interact",
+      "attack"
+    ]
+  ],
+  "rewards": {
+    "function": "s.scorpio:detect_use/click"
+  }
+}

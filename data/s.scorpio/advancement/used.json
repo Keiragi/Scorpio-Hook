@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "custom_data": {
+              "S.Data": {
+                "ItemID": "Hook"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "s.scorpio:item/use"
+  }
+}
